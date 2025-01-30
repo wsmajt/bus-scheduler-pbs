@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2b581e2-4176-418a-a5c1-e2c583f5285f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/TrainCard.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api/schedule/PKP/+server.ts" afterDir="false" />
+    <list default="true" id="a2b581e2-4176-418a-a5c1-e2c583f5285f" name="Changes" comment="+TrainCard.svelte&#10;+Train Api">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/+server.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/BusCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/BusCard.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/TrainCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/TrainCard.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,11 +111,24 @@
       <workItem from="1738247565623" duration="117000" />
       <workItem from="1738248201552" duration="370000" />
       <workItem from="1738261591640" duration="1517000" />
-      <workItem from="1738263161406" duration="6801000" />
+      <workItem from="1738263161406" duration="7536000" />
     </task>
+    <task id="LOCAL-00001" summary="+TrainCard.svelte&#10;+Train Api">
+      <option name="closed" value="true" />
+      <created>1738270429152</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738270429152</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="+TrainCard.svelte&#10;+Train Api" />
+    <option name="LAST_COMMIT_MESSAGE" value="+TrainCard.svelte&#10;+Train Api" />
   </component>
 </project>

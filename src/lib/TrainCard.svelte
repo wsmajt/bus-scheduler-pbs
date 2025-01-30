@@ -67,7 +67,7 @@
 	{#if loading && initialLoad}
 		<div class="space-y-3">
 			{#each { length: 3 } as _}
-				<div class="h-12 bg-gray-100 animate-pulse rounded-lg" />
+				<div class="h-12 bg-gray-100 animate-pulse rounded-lg"></div>
 			{/each}
 		</div>
 	{:else if error}
