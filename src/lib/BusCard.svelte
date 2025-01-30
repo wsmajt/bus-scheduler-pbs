@@ -1,5 +1,4 @@
-﻿<!-- src/lib/BusSchedule.svelte -->
-<script lang="ts">
+﻿<script lang="ts">
     import { fly, fade } from 'svelte/transition';
 
     let {stopId, name} = $props();
@@ -14,10 +13,13 @@
     let loading = $state(true);
     let error = $state<string | null>(null);
     let refreshInterval = $state<NodeJS.Timeout>();
+    let initialLoad = $state(true);
 
     async function fetchData() {
         error = null;
-        loading = true;
+        if (initialLoad) {
+            loading = true;
+        }
 
         try {
             const cookieResponse = await fetch(`/api/schedule/GetSessionCookie/${stopId}`);
@@ -33,8 +35,10 @@
             if (data.error) throw new Error(data.error);
 
             departures = data.departures;
+            initialLoad = false;
         } catch (err) {
             error = (err as Error).message;
+            departures = [];
         } finally {
             loading = false;
         }
@@ -42,17 +46,15 @@
 
     $effect(() => {
         fetchData();
-        refreshInterval = setInterval(fetchData, 30_000);
+        refreshInterval = setInterval(fetchData, 40_000);
 
         return () => {
             clearInterval(refreshInterval);
-            departures = [];
         };
     });
 </script>
 
 <div class="h-full w-full bg-white rounded-lg shadow-sm border border-gray-200 p-4 transition-all duration-300 hover:shadow-md flex flex-col">
-    <!-- Header -->
     <div class="flex items-center justify-between mb-6">
         <div>
             <h2 class="text-xl font-semibold text-gray-800">
@@ -61,15 +63,14 @@
         </div>
     </div>
 
-    <!-- Content -->
-    {#if loading}
+    {#if loading && initialLoad}
         <div class="space-y-3">
             {#each { length: 3 } as _}
                 <div class="h-12 bg-gray-100 animate-pulse rounded-lg" />
             {/each}
         </div>
     {:else if error}
-        <div class="p-4 bg-red-50 text-red-700 rounded-lg flex items-center gap-3">
+        <div class="p-4 bg-red-50 text-red-700 rounded-lg flex items-center gap-3 animate-pulse">
             <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5 shrink-0"
@@ -97,7 +98,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                {#each departures as departure (departure.line + departure.direction + departure.departure)}
+                {#each departures as departure}
                     <tr
                             class="group hover:bg-gray-50 transition-colors"
                             in:fly={{ y: 10, duration: 200 }}

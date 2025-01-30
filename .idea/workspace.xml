@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2b581e2-4176-418a-a5c1-e2c583f5285f" name="Changes" comment="" />
+    <list default="true" id="a2b581e2-4176-418a-a5c1-e2c583f5285f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lib/TrainCard.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/api/schedule/PKP/+server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/+server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/BusCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/BusCard.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,14 +21,30 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="BusCard" />
+        <option value="TypeScript File" />
+        <option value="TrainCard" />
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;wsmajt&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/wsmajt/bus-scheduler-pbs.git&quot;,
+    &quot;accountId&quot;: &quot;af015458-fda8-4a40-bb32-c8d8ee4b5a15&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2sJX0Vm7ps5y9KkNR1zYagUxp69" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -30,8 +54,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/kacpe/WebstormProjects/bus-schedule/src/routes/api/schedule/GetSessionCookie",
+    "last_opened_file_path": "C:/Users/kacpe/WebstormProjects/bus-schedule/src/routes/api/schedule/PKP",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -39,6 +65,7 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "npm.npm dev.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\kacpe\\WebstormProjects\\bus-schedule\\node_modules\\prettier",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Users\\kacpe\\WebstormProjects\\bus-schedule\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -46,6 +73,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kacpe\WebstormProjects\bus-schedule\src\routes\api\schedule\PKP" />
       <recent name="C:\Users\kacpe\WebstormProjects\bus-schedule\src\routes\api\schedule\GetSessionCookie" />
       <recent name="C:\Users\kacpe\WebstormProjects\bus-schedule\src\lib" />
     </key>
@@ -83,7 +111,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738174429473</updated>
-      <workItem from="1738174430374" duration="15069000" />
+      <workItem from="1738174430374" duration="20238000" />
+      <workItem from="1738247565623" duration="117000" />
+      <workItem from="1738248201552" duration="370000" />
+      <workItem from="1738261591640" duration="1517000" />
+      <workItem from="1738263161406" duration="6801000" />
     </task>
     <servers />
   </component>
